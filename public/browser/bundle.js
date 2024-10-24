@@ -2,6 +2,7 @@
 const weightedSearchAlgorithm = require("../pathfindingAlgorithms/weightedSearchAlgorithm");
 const unweightedSearchAlgorithm = require("../pathfindingAlgorithms/unweightedSearchAlgorithm");
 
+// Used for the animations of the pathfinding algorithms
 function launchAnimations(board, success, type, object, algorithm, heuristic) {
   let nodes = object ? board.objectNodesToAnimate.slice(0) : board.nodesToAnimate.slice(0);
   let speed = board.speed === "fast" ?
